@@ -1,7 +1,3 @@
-@import url(../src/components/header/header.css);
-@import url(../src/components/content/content.css);
-@import url(../src/components/footer/footer.css);
-
 /* variables */
 :root {
     /* color */
@@ -16,12 +12,24 @@
 
     /* Spacing &  Sizing */
     --width-background: 1440px;
-    --height-header-container: 68px;
+    --height-header: 68px;
+    --padding-header: 57.5px;
+    
+    --width-logo: 92.5px;
+    --height-logo: 68px;
+    --margin-logo-right: 25px;
+    --width-logo-img: 92.5px;
+    --height-logo-img: 25px;
+
     --width-category-card: 224px;
     --height-category-card: 126px;
     --width-rank-card: 110px;
     --height-category-card: 165px;
     
+    --margin-logo-right: 25px;
+    --width-logo: 92.5px;
+    --height-logo-img: 25px;
+
     /* Borders & Shadows */
 
     /* Transitions & Animations */
@@ -39,4 +47,40 @@ body {
     
     width: var(--width-background);
     margin: 0;
+
+    background-color: var(--color-background);
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+    width: var(--width-background);
+    height: var(--height-header);
+    margin: 0;
+    padding-left: var(--padding-header);
+    padding-right: var(--padding-header);
+
+    background-color: var(--color-background);
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    
+    width: var(--width-logo);
+    height: var(--height-logo);
+    margin: 0;
+    margin-right: var(--margin-logo-right);
+}
+
+.logo img {
+    width: var(--width-logo-img);
+    height: var(--height-logo-img);
+
+    object-fit: cover;
 }
