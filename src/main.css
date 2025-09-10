@@ -1,3 +1,42 @@
 @import url(../src/components/header/header.css);
 @import url(../src/components/content/content.css);
 @import url(../src/components/footer/footer.css);
+
+/* variables */
+:root {
+    /* color */
+    --color-background: #141414;
+
+    /* Typography */
+    --font-size-menu: 0.75vw;
+    --font-size-hero: 1.2vw;
+    --font-size-category: 1.4vw;
+    --font-size-footer-link: 13px;
+    --font-size-footer-copyright: 11px;
+
+    /* Spacing &  Sizing */
+    --width-background: 1440px;
+    --height-header-container: 68px;
+    --width-category-card: 224px;
+    --height-category-card: 126px;
+    --width-rank-card: 110px;
+    --height-category-card: 165px;
+    
+    /* Borders & Shadows */
+
+    /* Transitions & Animations */
+
+    /* Z-index */
+}
+
+/* base */
+body {
+    background-color: var(--color-background);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+    width: var(--width-background);
+    margin: 0;
+}
