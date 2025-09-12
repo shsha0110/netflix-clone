@@ -34,10 +34,10 @@ const primary_navigation_items = [
 ];
 
 function create_primary_navigation_item(parent, text, link) {
-    const navigation_item_container = create_component("li", "primary-navigation-item-container", parent);
-    const navigation_item = create_component("a", "primary-navigation-item", navigation_item_container);
-    navigation_item.textContent = text;
-    navigation_item.href = link;
+    const container = create_component("li", "primary-navigation-item-container", parent);
+    const item = create_component("a", "primary-navigation-item", container);
+    item.textContent = text;
+    item.href = link;
 }
 
 primary_navigation_items.forEach(item => {
@@ -53,11 +53,11 @@ const secondary_navigation_items = [
 ];
 
 function create_secondary_navigation_item(parent, icon_src, alt) {
-    const navigation_item_container = create_component("li", "secondary-navigation-item-container", parent);
-    const navigation_item = create_component("button", alt, navigation_item_container);
-    const navigation_icon = create_component("img", "", navigation_item);
-    navigation_icon.src = icon_src;
-    navigation_icon.alt = alt;
+    const container = create_component("li", "secondary-navigation-item-container", parent);
+    const item = create_component("button", alt, container);
+    const icon = create_component("img", "", item);
+    icon.src = icon_src;
+    icon.alt = alt;
 }
 
 secondary_navigation_items.forEach(item => {
@@ -99,3 +99,29 @@ const details_button_icon = create_component("span", "details-button-icon", deta
 details_button_icon.innerHTML = "ⓘ";
 const details_button_text = create_component("span", "details-button-text", details_button);
 details_button_text.innerHTML = "상세정보";
+
+// =================================================================
+// Category
+// =================================================================
+function create_category_section(parent, items, header_text) {
+    const container = create_component("div", "category-section-container", parent);
+    const header = create_component("div", "category-section-header", container);
+    header.textContent = header_text;
+    const slider = create_component("ul", "category-section-slider", container);
+    items.forEach(item => {
+        create_slider_item(slider, item.img_src);
+    });
+}
+
+function create_slider_item(parent, img_src) {
+    const item = create_component("li", "category-section-slider-item", parent);
+    const item_img = create_component("img", "category-section-slider-item-img", item);
+    item_img.src = img_src;
+}
+
+const upper_category = document.querySelector(".upper-category");
+const first_section_items = [{img_src: "images/slider_item1.jpg"}, {img_src: "images/slider_item2.jpg"},
+                             {img_src: "images/slider_item3.jpg"}, {img_src: "images/slider_item4.jpg"},
+                             {img_src: "images/slider_item5.jpg"}, {img_src: "images/slider_item6.jpg"}];
+const first_section_header_text = "넷플릭스 시리즈"
+create_category_section(upper_category, first_section_items, first_section_header_text);
