@@ -114,9 +114,37 @@ function create_category_section(parent, items, header_text) {
 }
 
 function create_slider_item(parent, img_src) {
+    // const item_container = create_component("div", "category-section-slider-item-container", parent)
+    
+    // const item = create_component("li", "category-section-slider-item", item_container);
     const item = create_component("li", "category-section-slider-item", parent);
-    const item_img = create_component("img", "category-section-slider-item-img", item);
+    const item_img = create_component("img", "", item);
     item_img.src = img_src;
+    
+    // const inner_item = create_component("div", "category-section-slider-inner-item", item_container);
+    const inner_item = create_component("div", "category-section-slider-inner-item", item);
+    const inner_item_img = create_component("img", "", inner_item);
+    inner_item_img.src = img_src;
+    
+    const inner_item_canvas = create_component("div", "category-section-slider-inner-item-canvas", inner_item);
+    const button_container = create_component("div", "button-container", inner_item_canvas);
+
+    const left_button_container = create_component("div", "left-button-container", button_container);
+    create_button("category-play-button", left_button_container, "images/play_button.png");
+    create_button("category-add-button", left_button_container, "images/add_button.png");
+    create_button("category-like-button", left_button_container, "images/like_button.png");
+    
+    const right_button_container = create_component("div", "right-button-container", button_container);
+    create_button("category-dropdown-button", right_button_container, "images/dropdown_button.png");
+
+    const description = create_component("p", "category-section-slider-inner-item-description", inner_item_canvas);
+    description.innerHTML = "Content Description";
+}
+
+function create_button(class_name, parent, icon_src) {
+    const button = create_component("button", class_name, parent);
+    const icon = create_component("img", "", button);
+    icon.src = icon_src;
 }
 
 const upper_category = document.querySelector(".upper-category");
