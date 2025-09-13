@@ -98,7 +98,7 @@ const details_button = create_component("button", "details-button", hero_button_
 const details_button_icon = create_component("span", "details-button-icon", details_button);
 details_button_icon.innerHTML = "ⓘ";
 const details_button_text = create_component("span", "details-button-text", details_button);
-details_button_text.innerHTML = "상세정보";
+details_button_text.innerHTML = "상세 정보";
 
 // =================================================================
 // Category
@@ -148,8 +148,27 @@ function create_button(class_name, parent, icon_src) {
 }
 
 const upper_category = document.querySelector(".upper-category");
-const first_section_items = [{img_src: "images/slider_item1.jpg"}, {img_src: "images/slider_item2.jpg"},
-                             {img_src: "images/slider_item3.jpg"}, {img_src: "images/slider_item4.jpg"},
-                             {img_src: "images/slider_item5.jpg"}, {img_src: "images/slider_item6.jpg"}];
-const first_section_header_text = "넷플릭스 시리즈"
-create_category_section(upper_category, first_section_items, first_section_header_text);
+const upper_first_section_items = [{img_src: "images/slider_item1.jpg"}, {img_src: "images/slider_item2.jpg"},
+                                   {img_src: "images/slider_item3.jpg"}, {img_src: "images/slider_item4.jpg"},
+                                   {img_src: "images/slider_item5.jpg"}, {img_src: "images/slider_item6.jpg"}];
+const upper_first_section_header_text = "넷플릭스 시리즈"
+create_category_section(upper_category, upper_first_section_items, upper_first_section_header_text);
+
+const upper_second_section_items = [{img_src: "images/slider_item7.webp"}, {img_src: "images/slider_item8.webp"},
+                                    {img_src: "images/slider_item9.webp"}, {img_src: "images/slider_item10.webp"},
+                                    {img_src: "images/slider_item11.webp"}, {img_src: "images/slider_item12.webp"}];
+const upper_second_section_header_text = "매주 공개! 이건 꼭 봐야 해"
+create_category_section(upper_category, upper_second_section_items, upper_second_section_header_text);
+
+const lower_category = document.querySelector(".lower-category");
+const lower_first_section_items = [{img_src: "images/slider_item13.jpg"}, {img_src: "images/slider_item14.jpg"},
+                                   {img_src: "images/slider_item15.webp"}, {img_src: "images/slider_item16.webp"},
+                                   {img_src: "images/slider_item17.jpg"}, {img_src: "images/slider_item18.webp"}];
+const lower_first_section_header_text = "어워드 수상 범죄 시리즈"
+create_category_section(lower_category, lower_first_section_items, lower_first_section_header_text);
+
+const lower_second_section_items = [{img_src: "images/slider_item19.webp"}, {img_src: "images/slider_item20.jpg"},
+                                    {img_src: "images/slider_item21.webp"}, {img_src: "images/slider_item22.webp"},
+                                    {img_src: "images/slider_item23.webp"}, {img_src: "images/slider_item24.webp"}];
+const lower_second_section_header_text = "어워드 수상 한국 드라마"
+create_category_section(lower_category, lower_second_section_items, lower_second_section_header_text);

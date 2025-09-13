@@ -13,13 +13,13 @@
     --font-size-navigation: 14px;
     --font-weight-navigation: 300;
 
-    --font-size-hero: 1.2vw;
-    --font-size-hero-button-icon: 2vw;
+    --font-size-hero: 16px;
+    --font-size-hero-button-icon: 28px;
     --font-weight-hero-button-icon: 500;
-    --font-size-hero-button-text: 1.2vw;
-    --font-weight-hero-button-text: 350;
+    --font-size-hero-button-text: 16px;
+    --font-weight-hero-button-text: 320;
     
-    --font-size-category: 1.4vw;
+    --font-size-category: 20px;
     --font-size-footer-link: 13px;
     --font-size-footer-copyright: 11px;
 
@@ -51,17 +51,19 @@
 
     --width-hero: 1440px;
     --height-hero: 810px;
+    --margin-top-hero: -68px;
     --padding-hero-content: 57.5px;
     --gap-hero-content: 8px;
-    --hero-poster-width: 600px;
+    --width-hero-poster: 600px;
     --hero-description-width: 500px;
-    --width-hero-button-container: 250px;
-    --height-hero-button-container: 40px;
-    --gap-hero-button: 8px;
-    --width-hero-play-button: 100px;
-    --width-hero-details-button: 130px;
+    --width-hero-button-container: 275px;
+    --height-hero-button-container: 43px;
+    --gap-hero-button: 10px;
+    --width-hero-play-button: 115px;
+    --width-hero-details-button: 150px;
 
     --padding-category: 57.5px;
+    --gap-category: 56px;
     --gap-category-section-container: 8px;
     --height-category-section-container: 158px;
     --height-category-section-header: 24px;
@@ -78,9 +80,6 @@
     --height-category-button: 30px;
     --padding-category-section-slider-inner-item-canvas: 16px;
     --gap-button-container: 8px;
-
-
-     
 
     /* Borders & Shadows */
 
@@ -285,12 +284,12 @@ body {
 }
 
 .hero-title {
-    width: var(--hero-poster-width);
+    width: var(--width-hero-poster);
     height: auto;
 }
 
 .hero-description {
-    width: var(--hero-poster-width);
+    width: var(--width-hero-poster);
     height: auto;
 
     font-size: var(--font-size-hero);
@@ -306,7 +305,6 @@ body {
     width: var(--width-hero-button-container);
     height: var(--height-hero-button-container);
     margin: 0;
-    /* gap: var(--gap-hero-button-container); */
 }
 
 .play-button {
@@ -323,7 +321,7 @@ body {
     border: none;
 
     background-color: var(--color-hero-play-button);
-    border-radius: 10%;
+    border-radius: 5%;
 
     cursor: pointer;
 }
@@ -358,7 +356,7 @@ body {
     color: var(--color-font);
 
     background-color: var(--color-hero-details-button);
-    border-radius: 10%;
+    border-radius: 5%;
 
     cursor: pointer;
 }
@@ -387,8 +385,13 @@ body {
     height: auto;
     margin: 0;
     padding-left: var(--padding-category);
+    gap: var(--gap-category);
     
     box-sizing: border-box;
+}
+
+.lower-category {
+    padding-top: var(--padding-category);
 }
 
 .upper-category {
