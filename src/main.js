@@ -87,17 +87,17 @@ hero_description.innerHTML = "전 세계 시청 시간 16억 5천만을 넘기�
 const hero_button_container = create_component("div", "hero-button-container", hero_content);
 
 // Play Button
-const play_button = create_component("button", "play-button", hero_button_container);
-const play_button_icon = create_component("span", "play-button-icon", play_button);
+const play_button = create_component("button", "hero-play-button", hero_button_container);
+const play_button_icon = create_component("span", "hero-play-button-icon", play_button);
 play_button_icon.innerHTML = "►";
-const play_button_text = create_component("span", "play-button-text", play_button);
+const play_button_text = create_component("span", "hero-play-button-text", play_button);
 play_button_text.innerHTML = "재생";
 
 // Details Button
-const details_button = create_component("button", "details-button", hero_button_container);
-const details_button_icon = create_component("span", "details-button-icon", details_button);
+const details_button = create_component("button", "hero-details-button", hero_button_container);
+const details_button_icon = create_component("span", "hero-details-button-icon", details_button);
 details_button_icon.innerHTML = "ⓘ";
-const details_button_text = create_component("span", "details-button-text", details_button);
+const details_button_text = create_component("span", "hero-details-button-text", details_button);
 details_button_text.innerHTML = "상세 정보";
 
 // =================================================================
@@ -109,35 +109,31 @@ function create_category_section(parent, items, header_text) {
     header.textContent = header_text;
     const slider = create_component("ul", "category-section-slider", container);
     items.forEach(item => {
-        create_slider_item(slider, item.img_src);
+        create_category_slider_item(slider, item.img_src);
     });
 }
 
-function create_slider_item(parent, img_src) {
-    // const item_container = create_component("div", "category-section-slider-item-container", parent)
-    
-    // const item = create_component("li", "category-section-slider-item", item_container);
+function create_category_slider_item(parent, img_src) {
     const item = create_component("li", "category-section-slider-item", parent);
     const item_img = create_component("img", "", item);
     item_img.src = img_src;
     
-    // const inner_item = create_component("div", "category-section-slider-inner-item", item_container);
-    const inner_item = create_component("div", "category-section-slider-inner-item", item);
+    const inner_item = create_component("div", "slider-inner-item", item);
     const inner_item_img = create_component("img", "", inner_item);
     inner_item_img.src = img_src;
     
-    const inner_item_canvas = create_component("div", "category-section-slider-inner-item-canvas", inner_item);
+    const inner_item_canvas = create_component("div", "slider-inner-item-canvas", inner_item);
     const button_container = create_component("div", "button-container", inner_item_canvas);
 
     const left_button_container = create_component("div", "left-button-container", button_container);
-    create_button("category-play-button", left_button_container, "images/play_button.png");
-    create_button("category-add-button", left_button_container, "images/add_button.png");
-    create_button("category-like-button", left_button_container, "images/like_button.png");
+    create_button("content-play-button", left_button_container, "images/play_button.png");
+    create_button("content-add-button", left_button_container, "images/add_button.png");
+    create_button("content-like-button", left_button_container, "images/like_button.png");
     
     const right_button_container = create_component("div", "right-button-container", button_container);
-    create_button("category-dropdown-button", right_button_container, "images/dropdown_button.png");
+    create_button("content-dropdown-button", right_button_container, "images/dropdown_button.png");
 
-    const description = create_component("p", "category-section-slider-inner-item-description", inner_item_canvas);
+    const description = create_component("p", "slider-inner-item-description", inner_item_canvas);
     description.innerHTML = "Content Description";
 }
 
@@ -172,6 +168,55 @@ const lower_second_section_items = [{img_src: "images/slider_item19.webp"}, {img
                                     {img_src: "images/slider_item23.webp"}, {img_src: "images/slider_item24.webp"}];
 const lower_second_section_header_text = "어워드 수상 한국 드라마"
 create_category_section(lower_category, lower_second_section_items, lower_second_section_header_text);
+
+// =================================================================
+// Rank
+// =================================================================
+function create_rank_section(parent, items, header_text) {
+    const container = create_component("div", "rank-section-container", parent);
+    const header = create_component("div", "rank-section-header", container);
+    header.textContent = header_text;
+    const slider = create_component("ul", "rank-section-slider", container);
+    for (var i = 0; i < 6; i++) {
+        create_rank_slider_item(slider, items[i].icon_src, items[i].img_src, items[i].inner_img_src);
+    };
+}
+
+function create_rank_slider_item(parent, icon_src, img_src, inner_img_src) {
+    const item = create_component("li", "rank-section-slider-item", parent);
+    const rank_icon = create_component("img", "rank-section-slider-item-icon", item);
+    rank_icon.src = icon_src;
+    const item_img = create_component("img", "rank-section-slider-item-img", item);
+    item_img.src = img_src;
+
+    const inner_item = create_component("div", "slider-inner-item", item);
+    const inner_item_img = create_component("img", "", inner_item);
+    inner_item_img.src = inner_img_src;
+    
+    const inner_item_canvas = create_component("div", "slider-inner-item-canvas", inner_item);
+    const button_container = create_component("div", "button-container", inner_item_canvas);
+
+    const left_button_container = create_component("div", "left-button-container", button_container);
+    create_button("content-play-button", left_button_container, "images/play_button.png");
+    create_button("content-add-button", left_button_container, "images/add_button.png");
+    create_button("content-like-button", left_button_container, "images/like_button.png");
+    
+    const right_button_container = create_component("div", "right-button-container", button_container);
+    create_button("content-dropdown-button", right_button_container, "images/dropdown_button.png");
+
+    const description = create_component("p", "slider-inner-item-description", inner_item_canvas);
+    description.innerHTML = "Content Description";
+}
+
+const rank = document.querySelector(".rank");
+const rank_section_items = [{icon_src: "images/rank1_icon.svg", img_src: "images/rank1.webp", inner_img_src: "images/rank1_inner.webp"}, 
+                            {icon_src: "images/rank2_icon.svg", img_src: "images/rank2.webp", inner_img_src: "images/rank2_inner.webp"},
+                            {icon_src: "images/rank3_icon.svg", img_src: "images/rank3.webp", inner_img_src: "images/rank3_inner.webp"}, 
+                            {icon_src: "images/rank4_icon.svg", img_src: "images/rank4.jpg", inner_img_src: "images/rank4_inner.jpg"},
+                            {icon_src: "images/rank5_icon.svg", img_src: "images/rank5.webp", inner_img_src: "images/rank5_inner.webp"}, 
+                            {icon_src: "images/rank6_icon.svg", img_src: "images/rank6.jpg", inner_img_src: "images/rank6_inner.jpg"}];
+const rank_section_header_text = "오늘 대한민국의 TOP 10 시리즈";
+create_rank_section(rank, rank_section_items, rank_section_header_text);
 
 // =================================================================
 // Footer
