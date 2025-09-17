@@ -1,0 +1,141 @@
+/* ================================================================= */
+/* Hero */
+/* ================================================================= */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    
+    width: var(--width-hero);
+    height: var(--height-hero);
+    margin: 0;
+    margin-bottom: var(--margin-bottom-hero);
+}
+
+.poster {
+    position: absolute;
+    z-index: 1;
+
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    z-index: 2;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: absolute;
+    z-index: 3;
+
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    gap: var(--gap-hero-content);
+    padding-left: var(--padding-hero-content);
+    box-sizing: border-box;
+}
+
+.hero-title {
+    width: var(--width-hero-poster);
+    height: auto;
+}
+
+.hero-description {
+    width: var(--width-hero-poster);
+    height: auto;
+
+    font-size: var(--font-size-hero);
+    color: var(--color-font);
+}
+
+.hero-button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: var(--width-hero-button-container);
+    height: var(--height-hero-button-container);
+    margin: 0;
+}
+
+.hero-play-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    width: var(--width-hero-play-button);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    gap: var(--gap-hero-button);
+    border: none;
+
+    background-color: var(--color-hero-play-button);
+    border-radius: 5%;
+
+    cursor: pointer;
+}
+
+.hero-play-button:hover {
+    background-color: var(--color-hero-play-button-hover);
+}
+
+.hero-play-button-icon {
+    font-size: var(--font-size-hero-button-icon);
+    font-weight: var(--font-weight-hero-button-icon);
+}
+
+.hero-play-button-text {
+    font-size: var(--font-size-hero-button-text);
+    font-weight: var(--font-weight-hero-button-text);
+}
+
+.hero-details-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    width: var(--width-hero-details-button);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    gap: var(--gap-hero-button);
+    border: none;
+
+    color: var(--color-font);
+
+    background-color: var(--color-hero-details-button);
+    border-radius: 5%;
+
+    cursor: pointer;
+}
+
+.hero-details-button:hover {
+    background-color: var(--color-hero-details-button-hover);
+}
+
+.hero-details-button-icon {
+    font-size: var(--font-size-hero-button-icon);
+    font-weight: var(--font-weight-hero-button-icon);
+}
+
+.hero-details-button-text {
+    font-size: var(--font-size-hero-button-text);
+    font-weight: var(--font-weight-hero-button-text);
+}

@@ -1,0 +1,96 @@
+/* ================================================================= */
+/* Rank */
+/* ================================================================= */
+.rank {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding-bottom: var(--padding-content);
+    padding-left: var(--padding-content);
+    gap: var(--gap-rank);
+    
+    box-sizing: border-box;
+}
+
+.rank-section-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+    width: 100%;
+    height: var(--height-category-section-container);
+    margin: 0;
+    padding: 0;
+    gap: var(--gap-category-section-container); 
+    box-sizing: border-box;   
+}
+
+.rank-section-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    
+    width: 100%;
+    height: var(--height-category-section-header);
+    margin: 0;
+    padding: 0;
+    font-size: var(--font-size-hero-button-text);
+    font-weight: var(--font-weight-hero-button-text);
+
+    color: var(--color-font);
+    font-size: var(--font-size-category);
+}
+
+.rank-section-slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    
+    width: 100%;
+    height: var(--height-category-rank-slider);
+    margin: 0;
+    padding: 0;
+    gap: var(--gap-category-section-slider);
+}
+
+.rank-section-slider-item {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    
+    width: var(--width-rank-section-slider-item);
+    height: var(--height-rank-section-slider-item);
+
+    cursor: pointer;
+}
+
+.rank-section-slider-item:hover {
+    z-index: 5;
+}
+
+.rank-section-slider-item-icon {
+    width: auto;
+    height: 100%;
+}
+
+.rank-section-slider-item-img {
+    width: auto;
+    height: 100%;
+
+    border-radius: 5%;
+}
+
+.rank-section-slider-item:hover .slider-inner-item {
+    opacity: 1;
+    visibility: visible;
+}

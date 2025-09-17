@@ -1,0 +1,17 @@
+@import url(variables.css);
+@import url(./header/header.css);
+@import url(./content/content.css);
+@import url(./footer/footer.css);
+
+body {
+    background-color: var(--color-background);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+    width: var(--width-background);
+    margin: 0;
+
+    background-color: var(--color-background);
+}

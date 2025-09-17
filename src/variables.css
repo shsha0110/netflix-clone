@@ -1,0 +1,120 @@
+/* variables */
+:root {
+    /* color */
+    --color-background: #141414;
+    --color-font: #fff;
+    --color-font-hover: #e5e5e5;
+
+    --color-hero-play-button: #fff;
+    --color-hero-play-button-hover: #e5e5e5;
+    --color-hero-details-button:  rgba(110, 110, 110, 0.7);
+    --color-hero-details-button-hover: rgba(80, 80, 80, 0.8);
+    
+    --color-font-rank-icon: #808080;
+    
+    --color-font-footer: #808080;
+
+    /* Typography */
+    --font-size-navigation: 14px;
+    --font-weight-navigation: 300;
+
+    --font-size-hero: 16px;
+    --font-size-hero-button-icon: 28px;
+    --font-weight-hero-button-icon: 500;
+    --font-size-hero-button-text: 16px;
+    --font-weight-hero-button-text: 320;
+    
+    --font-size-category: 20px;
+
+
+    --font-size-footer-link: 13px;
+    --font-size-footer-copyright: 11px;
+
+    /* Spacing &  Sizing */
+    --width-background: 1440px;
+    --height-header: 64px;
+    --padding-header: 57.5px;
+    
+    --width-logo: 92.5px;
+    --height-logo: 68px;
+    --margin-logo-right: 24px;
+    --width-logo-img: 92.5px;
+    --height-logo-img: 30px;
+
+    --width-primary-navigation: 560px;
+    --height-primary-navigation: 68px;
+    --width-secondary-navigation: 154px;
+    --height-secondary-navigation: 68px;
+
+    --height-primary-navigation-item: 19.5px;
+    --margin-primary-navigation-item-left: 24px;
+    --margin-secondary-navigation-item-right: 24px;
+    --width-secondary-navigation-search: 28px;
+    --height-secondary-navigation-search: 28px;
+    --width-secondary-navigation-notification: 32px;
+    --height-secondary-navigation-notification: 32px;
+    --width-secondary-navigation-profile: 32px;
+    --height-secondary-navigation-profile: 32px;
+
+    --gap-content: 56px;
+
+    --width-hero: 1440px;
+    --height-hero: 810px;
+    --margin-top-hero: -64px;
+    --margin-bottom-hero: -100px;
+    --padding-hero-content: 57.5px;
+    --gap-hero-content: 8px;
+    --width-hero-poster: 600px;
+    --hero-description-width: 500px;
+    --width-hero-button-container: 275px;
+    --height-hero-button-container: 43px;
+    --gap-hero-button: 8px;
+    --width-hero-play-button: 115px;
+    --width-hero-details-button: 150px;
+
+    --padding-content: 57.5px;
+    --gap-category-section-container: 8px;
+    --height-category-section-container: 158px;
+    --height-category-section-header: 24px;
+    --height-category-section-slider: 126px;
+    --gap-category-section-slider: 8px;
+    --width-category-section-slider-item: 224px;
+    --height-category-section-slider-item: 126px;
+    --margin-top-upper-category: -100px;
+    --padding-bottom-category: 200px;
+    --width-slider-inner-item: 270px;
+    --height-slider-inner-item: 270px;
+    --width-content-button: 30px;
+    --height-content-button: 30px;
+    --padding-slider-inner-item-canvas: 16px;
+    --gap-button-container: 8px;
+
+    --gap-rank: 80px;
+    --gap-category-section-container: 8px;
+    --height-rank-section-container: 197px;
+    --width-rank-section-slider-item: 220px;
+    --height-rank-section-slider-item: 165px;
+    --height-rank-section-slider-item-icon: 165px;
+    --width-rank-section-slider-item-img: 110px;
+    --height-rank-section-slider-item-img: 165px;
+
+    --padding-footer: 240px;
+    --margin-top-footer: 160px;
+    --margin-bottom-footer: 24px;
+    --gap-footer: 24px;
+    --width-social-link: 28px;
+    --height-social-link: 28px;
+    --gap-social-link-container: 32px;
+    --width-member-link-table: 980px;
+    --height-member-link-table: 90px;
+    --height-member-link-row: 30px;
+    --width-member-link-container: 245px;
+    --height-member-link-container: 30px;
+    --gap-copyright-container: 4px;
+
+    /* Borders & Shadows */
+
+    /* Transitions & Animations */
+
+    /* Z-index */
+}
