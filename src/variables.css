@@ -72,11 +72,16 @@
     --width-tooltip-arrow: 16px;
     --height-tooltip-arrow: 8px;
     --height-notification-item: 100px;
-    --gap-notification-item: 16px;
-    --padding-notification-item: 8px;
+    --gap-modal: 16px;
+    --padding-modal: 8px;
     --width-notification-item-img: 30px;
     --height-notification-item-img: 20px;
-
+    --width-user-profile-modal: 240px;
+    --height-user-profile-modal: 450px;
+    --height-user-profile-tooltip-background: 400px;
+    --height-profile-item: 48px;
+    --height-logout-button: 40px;
+    
 
 
 
@@ -91,7 +96,7 @@
     --width-hero: 1440px;
     --height-hero: 810px;
     --margin-top-hero: -64px;
-    --margin-bottom-hero: -100px;
+    --margin-bottom-hero: -200px;
     --padding-hero-content: 57.5px;
     --gap-hero-content: 8px;
     --width-hero-poster: 600px;
@@ -148,4 +153,7 @@
     /* Transitions & Animations */
 
     /* Z-index */
+    --z-index-header: 1;
+    --z-index-content-header: 2;
+    --z-index-content-inner-card: 3;
 }

@@ -36,6 +36,7 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    z-index: var(--z-index-content-header);
     
     width: 100%;
     height: var(--height-category-section-header);
@@ -74,10 +75,6 @@
     cursor: pointer;
 }
 
-.rank-section-slider-item:hover {
-    z-index: 5;
-}
-
 .rank-section-slider-item-icon {
     width: auto;
     height: 100%;
@@ -91,6 +88,7 @@
 }
 
 .rank-section-slider-item:hover .slider-inner-item {
+    z-index: var(--z-index-content-inner-card);
     opacity: 1;
     visibility: visible;
 }

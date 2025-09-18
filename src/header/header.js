@@ -58,9 +58,14 @@ function create_secondary_navigation(parent) {
                             time: "1개월"}];
     create_notification(secondary_navigation, secondary_navigation_items.notification, notifications);
 
-    const profiles = [{ img_src: "",
-                        text: "",
-                        time: ""}];
+    const profiles = [{img_src: `${img_dir}user_profile_1.jpg`, text: "User #1"},
+                      {img_src: `${img_dir}user_profile_2.jpg`, text: "User #2"},
+                      {img_src: `${img_dir}user_profile_3.jpg`, text: "User #3"},
+                      {img_src: `${img_dir}user_profile_4.jpg`, text: "User #4"},
+                      {img_src: `${img_dir}profile_management_icon.png`, text: "프로필 관리"},
+                      {img_src: `${img_dir}profile_migration_icon.png`, text: "프로필 이전"},
+                      {img_src: `${img_dir}account_icon.png`, text: "계정"},
+                      {img_src: `${img_dir}customer_service_icon.png`, text: "고객센터"}];
     create_user_profile(secondary_navigation, secondary_navigation_items.user_profile, profiles);
 }
 
@@ -85,8 +90,8 @@ function create_notification(parent, contents, notifications) {
 
 function create_notification_modal(parent, notifications) {
     const notification_modal = create_component("div", "notification-modal", parent);
-    const tooltip_arrow = create_component("div", "tooltip-arrow", notification_modal);
-    const tooltip_background = create_component("div", "tooltip-background", notification_modal);
+    const tooltip_arrow = create_component("div", "notification-tooltip-arrow", notification_modal);
+    const tooltip_background = create_component("div", "notification-tooltip-background", notification_modal);
     notifications.forEach(notification => {
         create_notification_item(tooltip_background, notification.img_src, notification.text, notification.time);
     })
@@ -111,7 +116,21 @@ function create_user_profile(parent, contents, profiles) {
 }
 
 function create_user_profile_modal(parent, profiles) {
+    const user_profile_modal = create_component("div", "user-profile-modal", parent);
+    const tooltip_arrow = create_component("div", "profile-tooltip-arrow", user_profile_modal);
+    const tooltip_background = create_component("div", "profile-tooltip-background", user_profile_modal);
+    profiles.forEach(profile => {
+        create_profile_item(tooltip_background, profile.img_src, profile.text)
+    })
+    const logout_button = create_component("button", "logout-button", user_profile_modal);
+    logout_button.innerHTML = "넷플릭스에서 로그아웃";
+}
 
+function create_profile_item(parent, img_src, text) {
+    const container = create_component("div", "profile-item", parent);
+    create_component_with_img("button", "profile-icon", container, img_src);
+    const text_box = create_component("div", "profile-text", container);
+    text_box.innerHTML = text;
 }
 
 function create_header(parent) {

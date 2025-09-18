@@ -6,16 +6,16 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+    z-index: var(--z-index-header);
     
     width: 100%;
     height: var(--height-header);
     margin: 0;
     padding-left: var(--padding-header);
     padding-right: var(--padding-header);
-
     box-sizing: border-box;
 
-    background-color: var(--color-background);
+    background-color: transparent;
 }
 
 .header-left, .header-right {
@@ -27,8 +27,6 @@
     width: auto;
     height: 100%;
     margin: 0;
-
-    background-color: var(--color-background);
 }
 
 .logo {
@@ -159,7 +157,7 @@
     visibility: hidden;
 }
 
-.tooltip-arrow {
+.notification-tooltip-arrow {
     position: absolute;
     top: -12px;
     right: 16px;
@@ -172,7 +170,7 @@
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
 
-.tooltip-background {
+.notification-tooltip-background {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -180,7 +178,7 @@
 
     width: var(--width-notification-modal);
     height: var(--height-notification-modal);
-    padding-top: var(--padding-notification-item);
+    padding-top: var(--padding-modal);
     
     background-color: var(--color-header-tooltip-dark);
     border: var(--border-tooltip-background);
@@ -197,11 +195,11 @@
     width: 100%;
     height: var(--height-notification-item);
     
-    gap: var(--gap-notification-item);
-    padding-left: var(--padding-notification-item);
-    padding-right: var(--padding-notification-item);
-    padding-top: var(--padding-notification-item);
-    padding-bottom: var(--padding-notification-item);
+    gap: var(--gap-modal);
+    padding-left: var(--padding-modal);
+    padding-right: var(--padding-modal);
+    padding-top: var(--padding-modal);
+    padding-bottom: var(--padding-modal);
     
     box-sizing: border-box;
 
@@ -250,6 +248,122 @@
 }
 
 .notification-button:hover .notification-modal {
+    opacity: 1;
+    visibility: visible;
+}
+
+.user-profile-modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: absolute;
+    top: 64px;
+    right: 80px;
+    z-index: 6;
+    
+    width: var(--width-user-profile-modal);
+    height: var(--height-user-profile-modal);
+    margin: 0;
+    padding: 0;
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+.profile-tooltip-arrow {
+    position: absolute;
+    top: -12px;
+    right: 24px;
+    z-index: 6;
+    
+    width: var(--width-tooltip-arrow);
+    height: var(--height-tooltip-arrow);
+    background-color: var(--color-header-tooltip-bright);
+    
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.profile-tooltip-background {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: var(--width-user-profile-modal);
+    height: var(--height-user-profile-tooltip-background);
+    padding-top: var(--padding-modal);
+    
+    background-color: var(--color-header-tooltip-dark);
+    border: var(--border-tooltip-background);
+    border-color: var(--color-header-tooltip-bright) var(--color-header-tooltip-grey) var(--color-header-tooltip-grey) var(--color-header-tooltip-grey);
+    box-sizing: border-box;
+}
+
+.profile-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 100%;
+    height: var(--height-profile-item);
+    
+    gap: var(--gap-modal);
+    padding-left: var(--padding-modal);
+    padding-right: var(--padding-modal);
+    padding-top: var(--padding-modal);
+    padding-bottom: var(--padding-modal);
+    
+    box-sizing: border-box;
+}
+
+.profile-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: var(--width-secondary-navigation-profile);
+    height: var(--height-secondary-navigation-profile);
+    padding: 0;
+
+    border-radius: 5%;
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+}
+
+.profile-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    color: var(--color-font);
+    text-align: left;
+}
+
+.logout-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: var(--height-logout-button);
+    padding: 0;
+    border: 0.5px solid var(--color-header-tooltip-grey);
+
+    background-color: var(--color-header-tooltip-dark);
+    
+    color: var(--color-font);
+    text-align: center;
+    
+    cursor: pointer;
+}
+
+.user-profile:hover .user-profile-modal {
     opacity: 1;
     visibility: visible;
 }
