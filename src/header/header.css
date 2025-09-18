@@ -131,6 +131,31 @@
     height: var(--height-secondary-navigation-notification);
 }
 
+.user-profile-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    width: var(--width-secondary-navigation-profile-container);
+    height: var(--height-secondary-navigation-profile-container);
+    gap: var(--gap-user-profile-container)
+}
+
+.profile-dropdown {
+    width: var(--width-profile-dropdown);
+    height: var(--height-profile-dropdown);
+    background-color: var(--color-header-tooltip-bright);
+    
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+
+    transition: transform 0.5s ease;
+}
+
+.profile-dropdown.is-rotated {
+    transform: rotate(180deg);
+}
+
 .user-profile img {
     width: var(--width-secondary-navigation-profile);
     height: var(--height-secondary-navigation-profile);
@@ -259,7 +284,7 @@
     align-items: flex-start;
     position: absolute;
     top: 64px;
-    right: 80px;
+    right: 100px;
     z-index: 6;
     
     width: var(--width-user-profile-modal);

@@ -57,15 +57,13 @@
     --height-secondary-navigation-search: 28px;
     --width-secondary-navigation-notification: 32px;
     --height-secondary-navigation-notification: 32px;
+    --width-secondary-navigation-profile-container: 48px;
+    --height-secondary-navigation-profile-container: 32px;
+    --gap-user-profile-container: 8px;
     --width-secondary-navigation-profile: 32px;
     --height-secondary-navigation-profile: 32px;
-
-
-
-
-
-
-
+    --width-profile-dropdown: 10px;
+    --height-profile-dropdown: 5px;
 
     --width-notification-modal: 400px;
     --height-notification-modal: 408px;
@@ -82,15 +80,6 @@
     --height-profile-item: 48px;
     --height-logout-button: 40px;
     
-
-
-
-
-
-
-
-
-
     --gap-content: 56px;
 
     --width-hero: 1440px;

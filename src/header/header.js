@@ -71,10 +71,26 @@ function create_secondary_navigation(parent) {
 
 function create_secondary_navigation_item(parent, icon_src, alt) {
     const container = create_component("li", "secondary-navigation-item-container", parent);
-    const item = create_component("button", alt, container);
-    const icon = create_component("img", `${item.className}-icon` , item);
-    icon.src = icon_src;
-    icon.alt = alt;
+
+    if (alt != "user-profile") {
+        const item = create_component("button", alt, container);
+        const icon = create_component("img", `${item.className}-icon`, item);
+        icon.src = icon_src;
+        icon.alt = alt;
+    } else {
+        const user_profile_container = create_component("div", "user-profile-container", container);
+        const item = create_component("button", alt, user_profile_container);
+        const icon = create_component("img", `${item.className}-icon`, item);
+        icon.src = icon_src;
+        icon.alt = alt;
+        const dropdown = create_component("div", "profile-dropdown", user_profile_container);
+        user_profile_container.addEventListener('mouseenter', () => {
+            dropdown.classList.add("is-rotated");
+        })
+        user_profile_container.addEventListener('mouseleave', () => {
+            dropdown.classList.remove("is-rotated");
+        })
+    }
 }
 
 function create_search(parent, contents) {
