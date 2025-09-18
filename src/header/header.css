@@ -121,6 +121,10 @@
     position: relative;
 }
 
+.user-profile {
+    position: relative;
+}
+
 .search-button img {
     width: var(--width-secondary-navigation-search);
     height: var(--height-secondary-navigation-search);
@@ -283,8 +287,8 @@
     justify-content: flex-start;
     align-items: flex-start;
     position: absolute;
-    top: 64px;
-    right: 100px;
+    top: 50px;
+    right: -16px;
     z-index: 6;
     
     width: var(--width-user-profile-modal);
