@@ -5,6 +5,10 @@
     --color-font: #fff;
     --color-font-hover: #e5e5e5;
 
+    --color-header-tooltip-bright: #fff;
+    --color-header-tooltip-dark: #000000A0;
+    --color-header-tooltip-grey: #808080;
+    
     --color-hero-play-button: #fff;
     --color-hero-play-button-hover: #e5e5e5;
     --color-hero-details-button:  rgba(110, 110, 110, 0.7);
@@ -55,6 +59,32 @@
     --height-secondary-navigation-notification: 32px;
     --width-secondary-navigation-profile: 32px;
     --height-secondary-navigation-profile: 32px;
+
+
+
+
+
+
+
+
+    --width-notification-modal: 400px;
+    --height-notification-modal: 408px;
+    --width-tooltip-arrow: 16px;
+    --height-tooltip-arrow: 8px;
+    --height-notification-item: 100px;
+    --gap-notification-item: 16px;
+    --padding-notification-item: 8px;
+    --width-notification-item-img: 30px;
+    --height-notification-item-img: 20px;
+
+
+
+
+
+
+
+
+
 
     --gap-content: 56px;
 
@@ -113,7 +143,8 @@
     --gap-copyright-container: 4px;
 
     /* Borders & Shadows */
-
+    --border-tooltip-background: 1px solid var(--color-header-tooltip-grey);
+    --box-shadow: 0 0 20px rgba(50, 50, 50, 0.5);
     /* Transitions & Animations */
 
     /* Z-index */

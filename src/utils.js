@@ -14,8 +14,8 @@ function create_component(tag, class_name, parent) {
 //  * @param {HTMLElement} parent - 생성된 요소를 추가할 부모 요소
 //  * @param {string} img_src - 이미지 요소 경로
 function create_component_with_img(tag, class_name, parent, img_src) {
-    const button = create_component(tag, class_name, parent);
-    const img = create_component("img", `${class_name}-img`, button);
+    const base = create_component(tag, class_name, parent);
+    const img = create_component("img", `${class_name}-img`, base);
     img.src = img_src;
 }
 
