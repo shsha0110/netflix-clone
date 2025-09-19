@@ -1,4 +1,3 @@
-@import url(hero/hero.css);
 @import url(./category/category.css);
 @import url(./rank/rank.css);
 
@@ -8,12 +7,17 @@
 .content {
     display: flex;
     flex-direction: column;
+
+    width: 100%;
     margin: 0;
     padding: 0;
+    padding-bottom: 150px;
     gap: var(--gap-content);
+
+    overflow: hidden;
 }
 
-.slider-inner-item {
+.slider-inner-card {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -22,9 +26,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); 
-/*     
-    top: -50%;
-    left: 0; */
 
     width: var(--width-slider-inner-item);
     height: var(--height-slider-inner-item);
@@ -40,13 +41,13 @@
     z-index: 10;
 }
 
-.slider-inner-item img{
+.slider-inner-card img{
     width: var(--width-slider-inner-item);
     height: auto;
     border-radius: 0;
 }
 
-.slider-inner-item-canvas {
+.slider-inner-card-canvas {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -124,7 +125,7 @@
     height: 100%;
 }
 
-.slider-inner-item-description {
+.slider-inner-card-description {
     padding-left: var(--padding-slider-inner-item-canvas);
     color: var(--color-font);
 }

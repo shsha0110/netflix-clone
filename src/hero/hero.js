@@ -1,20 +1,21 @@
 // =================================================================
 // Hero
 // =================================================================
-import { create_component } from "../../utils.js";
+import { create_component } from "../utils.js";
+const img_dir = "./hero/images/"
 
 function create_hero(parent) {
     const hero = create_component("section", "hero", parent);
 
     const poster = create_component("img", "poster", hero);
-    poster.src = "./content/hero/images/poster.webp";
+    poster.src = `${img_dir}poster.webp`;
     poster.alt = "오징어게임 포스터";
 
     const overlay = create_component("div", "overlay", hero);
     const hero_content = create_component("div", "hero-content", hero);
 
     const hero_title = create_component("img", "hero-title", hero_content);
-    hero_title.src = "./content/hero/images/title.webp";
+    hero_title.src = `${img_dir}title.webp`;
     hero_title.alt = "오징어게임 타이틀";
 
     const hero_description = create_component("p", "hero-description", hero_content);

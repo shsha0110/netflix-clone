@@ -1,5 +1,6 @@
 @import url(variables.css);
 @import url(./header/header.css);
+@import url(./hero/hero.css);
 @import url(./content/content.css);
 @import url(./footer/footer.css);
 

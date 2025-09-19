@@ -4,34 +4,36 @@
 .rank {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: flex-start;
     
     width: 100%;
     height: auto;
     margin: 0;
-    padding-bottom: var(--padding-content);
+    margin-bottom: var(--margin-bottom-content);
+    padding: 0;
+    margin-top: var(--padding-top-content);
     padding-left: var(--padding-content);
     gap: var(--gap-rank);
     
     box-sizing: border-box;
 }
 
-.rank-section-container {
+.rank-slider-container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: center;
     
     width: 100%;
-    height: var(--height-category-section-container);
+    height: var(--height-rank-slider-container);
     margin: 0;
     padding: 0;
-    gap: var(--gap-category-section-container); 
+    gap: var(--gap-category-slider-container); 
     box-sizing: border-box;   
 }
 
-.rank-section-header {
+.rank-header {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -39,7 +41,7 @@
     z-index: var(--z-index-content-header);
     
     width: 100%;
-    height: var(--height-category-section-header);
+    height: var(--height-category-header);
     margin: 0;
     padding: 0;
     font-size: var(--font-size-hero-button-text);
@@ -49,45 +51,45 @@
     font-size: var(--font-size-category);
 }
 
-.rank-section-slider {
+.rank-slider {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     
     width: 100%;
-    height: var(--height-category-rank-slider);
+    height: auto;
     margin: 0;
     padding: 0;
-    gap: var(--gap-category-section-slider);
+    gap: var(--gap-category-slider);
 }
 
-.rank-section-slider-item {
+.rank-slider-card {
     position: relative;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     
-    width: var(--width-rank-section-slider-item);
-    height: var(--height-rank-section-slider-item);
+    width: var(--width-rank-slider-card);
+    height: var(--height-rank-slider-card);
 
     cursor: pointer;
 }
 
-.rank-section-slider-item-icon {
+.rank-slider-icon {
     width: auto;
     height: 100%;
 }
 
-.rank-section-slider-item-img {
+.rank-slider-card-img {
     width: auto;
     height: 100%;
 
     border-radius: 5%;
 }
 
-.rank-section-slider-item:hover .slider-inner-item {
+.rank-slider-card:hover .slider-inner-card {
     z-index: var(--z-index-content-inner-card);
     opacity: 1;
     visibility: visible;
