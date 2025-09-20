@@ -17,6 +17,7 @@ function create_component_with_img(tag, class_name, parent, img_src) {
     const base = create_component(tag, class_name, parent);
     const img = create_component("img", `${class_name}-img`, base);
     img.src = img_src;
+    return base
 }
 
-export {create_component, create_component_with_img}
+export { create_component, create_component_with_img }

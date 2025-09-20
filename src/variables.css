@@ -14,9 +14,9 @@
     --color-hero-details-button:  rgba(110, 110, 110, 0.7);
     --color-hero-details-button-hover: rgba(80, 80, 80, 0.8);
 
-    --color-category-slider-page-indicator-element: #aaa;
-    --color-category-slider-page-indicator-element-active: #fff;
-    --color-category-slider-button-container: hsla(0, 0%, 8%, .5);
+    --color-slider-page-indicator-element: #aaa;
+    --color-slider-page-indicator-element-active: #fff;
+    --color-slider-button-container: hsla(0, 0%, 8%, .5);
     
     --color-font-rank-icon: #808080;
     
@@ -32,8 +32,8 @@
     --font-size-hero-button-text: 16px;
     --font-weight-hero-button-text: 320;
     
-    --font-size-category-slider-header-text: 20px;
-    --font-weight-category-slider-header-text: 320;
+    --font-size-slider-header-text: 20px;
+    --font-weight-slider-header-text: 320;
     
 
     --font-size-footer-link: 13px;
@@ -85,7 +85,7 @@
     --height-profile-item: 48px;
     --height-logout-button: 40px;
     
-    --gap-content: 68px;
+    --gap-content: 48px;
     --padding-content: 57.5px;
     
     --width-hero: 1440px;
@@ -106,59 +106,29 @@
     --height-slider-inner-item: 270px;
     --width-content-button: 30px;
     --height-content-button: 30px;
-    --padding-top-content: 68px;
+    --padding-top-content: 48px;
     --margin-bottom-content: -68px;
     --padding-slider-inner-item-canvas: 16px;
     --gap-button-container: 8px;
 
-
-
-
-
-
-
-
-
-
-
-
-
-    --height-category: 220px;
-    --gap-category: 8px;
-    --height-category-slider-header: 24px;
-    --height-category-slider-body: 120px;
-    --height-category-slider-page-indicator: 2px;
-    --gap-category-slider-page-indicator: 1px;
-    --width-category-slider-page-indicator-element: 12px;
-    --gap-category-slider-track: 8px;
+    --height-slider-header: 24px;
+    --height-slider-body: 120px;
+    --height-slider-page-indicator: 2px;
+    --gap-slider-page-indicator: 1px;
+    --width-slider-page-indicator-element: 12px;
+    --gap-slider-track: 8px;
+    
     --width-category-slider-card: 214px;
     --height-category-slider-card: 121px;
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-    --gap-rank: 80px;
-    --gap-category-slider-container: 8px;
-    --height-rank-slider-container: 197px;;
     --width-rank-slider-card: 220px;
     --height-rank-slider-card: 165px;
     --width-rank-slider-card-img: 110px;
     --height-rank-slider-card-img: 165px;
+
+    --height-category: 200px;
+    --gap-category: 8px;
+    --height-rank: 245px;
+    --gap-rank: 8px;
 
     --padding-footer: 240px;
     --margin-top-footer: 160px;
@@ -181,6 +151,7 @@
 
     /* Z-index */
     --z-index-header: 1;
-    --z-index-category-slider-button: 2;
-    --z-index-content-inner-card: 3;
+    --z-index-slider-button: 2;
+    --z-index-content-card: 1;
+    --z-index-content-card-hover: 3;
 }

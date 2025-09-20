@@ -6,91 +6,13 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    
-    width: 100%;
-    height: auto;
-    margin: 0;
-    margin-bottom: var(--margin-bottom-content);
-    padding: 0;
-    margin-top: var(--padding-top-content);
-    padding-left: var(--padding-content);
-    gap: var(--gap-rank);
-    
-    box-sizing: border-box;
-}
-
-.rank-slider-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    
-    width: 100%;
-    height: var(--height-rank-slider-container);
-    margin: 0;
-    padding: 0;
-    gap: var(--gap-category-slider-container); 
-    box-sizing: border-box;   
-}
-
-.rank-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    z-index: var(--z-index-content-header);
-    
-    width: 100%;
-    height: var(--height-category-header);
-    margin: 0;
-    padding: 0;
-    font-size: var(--font-size-hero-button-text);
-    font-weight: var(--font-weight-hero-button-text);
-
-    color: var(--color-font);
-    font-size: var(--font-size-category);
-}
-
-.rank-slider {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    
-    width: 100%;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    gap: var(--gap-category-slider);
-}
-
-.rank-slider-card {
     position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
     
-    width: var(--width-rank-slider-card);
-    height: var(--height-rank-slider-card);
-
-    cursor: pointer;
-}
-
-.rank-slider-icon {
-    width: auto;
-    height: 100%;
-}
-
-.rank-slider-card-img {
-    width: auto;
-    height: 100%;
-
-    border-radius: 5%;
-}
-
-.rank-slider-card:hover .slider-inner-card {
-    z-index: var(--z-index-content-inner-card);
-    opacity: 1;
-    visibility: visible;
+    width: 100%;
+    height: var(--height-rank);
+    margin: 0;
+    padding: 0;
+    padding-top: var(--padding-top-content);
+    gap: var(--gap-rank);
+    box-sizing: border-box;
 }
