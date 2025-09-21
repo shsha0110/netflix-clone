@@ -1,0 +1,18 @@
+/* ================================================================= */
+/* Rank */
+/* ================================================================= */
+.rank {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: relative;
+    
+    width: 100%;
+    height: var(--height-rank);
+    margin: 0;
+    padding: 0;
+    padding-top: var(--padding-top-content);
+    gap: var(--gap-rank);
+    box-sizing: border-box;
+}

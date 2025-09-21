@@ -1,0 +1,17 @@
+/* ================================================================= */
+/* Category */
+/* ================================================================= */
+.category {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: relative;
+    
+    width: 100%;
+    height: var(--height-category);
+    margin: 0;
+    padding: 0;
+    gap: var(--gap-category);   
+    box-sizing: border-box;
+}
