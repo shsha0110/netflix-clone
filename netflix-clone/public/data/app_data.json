@@ -1,0 +1,267 @@
+{
+    "header": {
+        "logo": {
+            "img_src": "/images/header/logo.png",
+            "alt": "Netflix logo"
+        },
+        "primary_navigation": [
+            { "text": "홈", "link": "#" },
+            { "text": "시리즈", "link": "#" },
+            { "text": "영화", "link": "#" },
+            { "text": "NEW! 요즘 대세 컨텐츠", "link": "#" },
+            { "text": "내가 찜한 리스트", "link": "#" }
+        ],
+        "secondary_navigation": {
+            "search": {
+                "img_src": "/images/header/search_icon.png",
+                "alt": "search-button"
+            },
+            "notification": {
+                "img_src": "/images/header/notification_icon.png",
+                "alt": "notification-button",
+                "items": [
+                {
+                    "img_src": "/images/header/notification_1.webp",
+                    "text": "9월 12일 공개<br>지금 예고편을 시청하세요",
+                    "time": "오늘"
+                },
+                {
+                    "img_src": "/images/header/notification_2.webp",
+                    "text": "신규 콘텐츠<br>나는 생존자다",
+                    "time": "3주 전"
+                },
+                {
+                    "img_src": "/images/header/notification_3.webp",
+                    "text": "손맛이 다른 세계가 온다<br>웬즈데이 시즌 2 공개",
+                    "time": "4주 전"
+                },
+                {
+                    "img_src": "/images/header/notification_4.webp",
+                    "text": "신규 콘텐츠<br>에스콰이어: 변호사를 꿈꾸는 변호사들",
+                    "time": "1개월"
+                }
+                ]
+            },
+            "profile": {
+                "img_src": "/images/header/user_profile_0.jpg",
+                "alt": "user-profile",
+                "items": [
+                { "img_src": "/images/header/user_profile_1.jpg", "text": "User #1" },
+                { "img_src": "/images/header/user_profile_2.jpg", "text": "User #2" },
+                { "img_src": "/images/header/user_profile_3.jpg", "text": "User #3" },
+                { "img_src": "/images/header/user_profile_4.jpg", "text": "User #4" },
+                { "img_src": "/images/header/profile_management_icon.png", "text": "프로필 관리" },
+                { "img_src": "/images/header/profile_migration_icon.png", "text": "프로필 이전" },
+                { "img_src": "/images/header/account_icon.png", "text": "계정" },
+                { "img_src": "/images/header/customer_service_icon.png", "text": "고객센터" }
+                ]
+            }
+        }
+    },
+
+    "hero": {
+        "poster": {
+            "img_src": "/images/hero/poster.webp",
+            "alt": "오징어게임 포스터"
+        },
+        "title": {
+            "img_src": "/images/hero/title.webp",
+            "alt": "오징어게임 타이틀"
+        },
+        "description": "전 세계 시청 시간 16억 5천만을 넘기며 역대 최고의 인기를 기록한 시리즈<br>빚더미에서 허우적대던 참가자들이 거액을 차지하고자 목숨을 걸고<br>위험천만한 아이들의 놀이에 뛰어든다.",
+            "buttons": {
+            "play": {
+                "icon": "►",
+                "text": "재생"
+            },
+            "details": {
+                "icon": "ⓘ",
+                "text": "상세 정보"
+            }
+        }
+    },
+
+    "content": {
+        "icons": {
+            "play_button": "/images/content/play_button.png",
+            "add_button": "/images/content/add_button.png",
+            "like_button": "/images/content/like_button.png",
+            "dropdown_button": "/images/content/dropdown_button.png",
+            "backward_button": "/images/content/backward_icon.png",
+            "forward_button": "/images/content/forward_icon.png",
+            "ranks" : [
+                "/images/content/rank/rank1_icon.svg",
+                "/images/content/rank/rank2_icon.svg",
+                "/images/content/rank/rank3_icon.svg",
+                "/images/content/rank/rank4_icon.svg",
+                "/images/content/rank/rank5_icon.svg",
+                "/images/content/rank/rank6_icon.svg",
+                "/images/content/rank/rank7_icon.svg",
+                "/images/content/rank/rank8_icon.svg",
+                "/images/content/rank/rank9_icon.svg",
+                "/images/content/rank/rank10_icon.svg"
+            ]
+        },
+        "sections": [
+        {
+            "type": "category",
+            "id": "netflix-series",
+            "header_text": "넷플릭스 시리즈",
+            "track_size": 6,
+            "cards": [
+                { "id": "ns01", "img_src": "/images/content/category/slider_item1.jpg", "inner_img_src": "/images/content/category/slider_item1.jpg" },
+                { "id": "ns02", "img_src": "/images/content/category/slider_item2.jpg", "inner_img_src": "/images/content/category/slider_item2.jpg" },
+                { "id": "ns03", "img_src": "/images/content/category/slider_item3.jpg", "inner_img_src": "/images/content/category/slider_item3.jpg" },
+                { "id": "ns04", "img_src": "/images/content/category/slider_item4.jpg", "inner_img_src": "/images/content/category/slider_item4.jpg" },
+                { "id": "ns05", "img_src": "/images/content/category/slider_item5.jpg", "inner_img_src": "/images/content/category/slider_item5.jpg" },
+                { "id": "ns06", "img_src": "/images/content/category/slider_item6.jpg", "inner_img_src": "/images/content/category/slider_item6.jpg" },
+                { "id": "ns07", "img_src": "/images/content/category/slider_item7.webp", "inner_img_src": "/images/content/category/slider_item7.webp" },
+                { "id": "ns08", "img_src": "/images/content/category/slider_item8.webp", "inner_img_src": "/images/content/category/slider_item8.webp" },
+                { "id": "ns09", "img_src": "/images/content/category/slider_item9.webp", "inner_img_src": "/images/content/category/slider_item9.webp" },
+                { "id": "ns10", "img_src": "/images/content/category/slider_item10.webp", "inner_img_src": "/images/content/category/slider_item10.webp" },
+                { "id": "ns11", "img_src": "/images/content/category/slider_item11.webp", "inner_img_src": "/images/content/category/slider_item11.webp" },
+                { "id": "ns12", "img_src": "/images/content/category/slider_item12.webp", "inner_img_src": "/images/content/category/slider_item12.webp" },
+                { "id": "ns13", "img_src": "/images/content/category/slider_item13.jpg", "inner_img_src": "/images/content/category/slider_item13.jpg" },
+                { "id": "ns14", "img_src": "/images/content/category/slider_item14.jpg", "inner_img_src": "/images/content/category/slider_item14.jpg" },
+                { "id": "ns15", "img_src": "/images/content/category/slider_item15.webp", "inner_img_src": "/images/content/category/slider_item15.webp" },
+                { "id": "ns16", "img_src": "/images/content/category/slider_item16.webp", "inner_img_src": "/images/content/category/slider_item16.webp" },
+                { "id": "ns17", "img_src": "/images/content/category/slider_item17.jpg", "inner_img_src": "/images/content/category/slider_item17.jpg" },
+                { "id": "ns18", "img_src": "/images/content/category/slider_item18.webp", "inner_img_src": "/images/content/category/slider_item18.webp" },
+                { "id": "ns19", "img_src": "/images/content/category/slider_item19.webp", "inner_img_src": "/images/content/category/slider_item19.webp" },
+                { "id": "ns20", "img_src": "/images/content/category/slider_item20.jpg", "inner_img_src": "/images/content/category/slider_item20.jpg" },
+                { "id": "ns21", "img_src": "/images/content/category/slider_item21.webp", "inner_img_src": "/images/content/category/slider_item21.webp" },
+                { "id": "ns22", "img_src": "/images/content/category/slider_item22.webp", "inner_img_src": "/images/content/category/slider_item22.webp" },
+                { "id": "ns23", "img_src": "/images/content/category/slider_item23.webp", "inner_img_src": "/images/content/category/slider_item23.webp" },
+                { "id": "ns24", "img_src": "/images/content/category/slider_item24.webp", "inner_img_src": "/images/content/category/slider_item24.webp" }
+            ]
+        },
+        {
+            "type": "category",
+            "id": "weekly-popular",
+            "header_text": "매주 공개! 이건 꼭 봐야 해",
+            "track_size": 5,
+            "cards": [
+                { "id": "wp01", "img_src": "/images/content/category/slider_item5.jpg", "inner_img_src": "/images/content/category/slider_item5.jpg" },
+                { "id": "wp02", "img_src": "/images/content/category/slider_item6.jpg", "inner_img_src": "/images/content/category/slider_item6.jpg" },
+                { "id": "wp03", "img_src": "/images/content/category/slider_item7.webp", "inner_img_src": "/images/content/category/slider_item7.webp" },
+                { "id": "wp04", "img_src": "/images/content/category/slider_item8.webp", "inner_img_src": "/images/content/category/slider_item8.webp" },
+                { "id": "wp05", "img_src": "/images/content/category/slider_item9.webp", "inner_img_src": "/images/content/category/slider_item9.webp" },
+                { "id": "wp06", "img_src": "/images/content/category/slider_item10.webp", "inner_img_src": "/images/content/category/slider_item10.webp" },
+                { "id": "wp07", "img_src": "/images/content/category/slider_item11.webp", "inner_img_src": "/images/content/category/slider_item11.webp" },
+                { "id": "wp08", "img_src": "/images/content/category/slider_item12.webp", "inner_img_src": "/images/content/category/slider_item12.webp" },
+                { "id": "wp09", "img_src": "/images/content/category/slider_item13.jpg", "inner_img_src": "/images/content/category/slider_item13.jpg" },
+                { "id": "wp10", "img_src": "/images/content/category/slider_item14.jpg", "inner_img_src": "/images/content/category/slider_item14.jpg" },
+                { "id": "wp11", "img_src": "/images/content/category/slider_item15.webp", "inner_img_src": "/images/content/category/slider_item15.webp" },
+                { "id": "wp12", "img_src": "/images/content/category/slider_item16.webp", "inner_img_src": "/images/content/category/slider_item16.webp" },
+                { "id": "wp13", "img_src": "/images/content/category/slider_item17.jpg", "inner_img_src": "/images/content/category/slider_item17.jpg" },
+                { "id": "wp14", "img_src": "/images/content/category/slider_item18.webp", "inner_img_src": "/images/content/category/slider_item18.webp" },
+                { "id": "wp15", "img_src": "/images/content/category/slider_item19.webp", "inner_img_src": "/images/content/category/slider_item19.webp" },
+                { "id": "wp16", "img_src": "/images/content/category/slider_item20.jpg", "inner_img_src": "/images/content/category/slider_item20.jpg" },
+                { "id": "wp17", "img_src": "/images/content/category/slider_item21.webp", "inner_img_src": "/images/content/category/slider_item21.webp" },
+                { "id": "wp18", "img_src": "/images/content/category/slider_item22.webp", "inner_img_src": "/images/content/category/slider_item22.webp" },
+                { "id": "wp19", "img_src": "/images/content/category/slider_item23.webp", "inner_img_src": "/images/content/category/slider_item23.webp" },
+                { "id": "wp20", "img_src": "/images/content/category/slider_item24.webp", "inner_img_src": "/images/content/category/slider_item24.webp" }
+            ]
+        },
+        {
+            "type": "rank",
+            "id": "top-10-korea",
+            "header_text": "오늘 대한민국의 TOP 10 시리즈",
+            "track_size": 5,
+            "cards": [
+                { "id": "top01", "rank": 1, "img_src": "/images/content/rank/rank1.jpg", "inner_img_src": "/images/content/rank/rank1_inner.jpg" },
+                { "id": "top02", "rank": 2, "img_src": "/images/content/rank/rank2.jpg", "inner_img_src": "/images/content/rank/rank2_inner.jpg" },
+                { "id": "top03", "rank": 3, "img_src": "/images/content/rank/rank3.jpg", "inner_img_src": "/images/content/rank/rank3_inner.jpg" },
+                { "id": "top04", "rank": 4, "img_src": "/images/content/rank/rank4.jpg", "inner_img_src": "/images/content/rank/rank4_inner.jpg" },
+                { "id": "top05", "rank": 5, "img_src": "/images/content/rank/rank5.jpg", "inner_img_src": "/images/content/rank/rank5_inner.jpg" },
+                { "id": "top06", "rank": 6, "img_src": "/images/content/rank/rank6.jpg", "inner_img_src": "/images/content/rank/rank6_inner.jpg" },
+                { "id": "top07", "rank": 7, "img_src": "/images/content/rank/rank7.jpg", "inner_img_src": "/images/content/rank/rank7_inner.jpg" },
+                { "id": "top08", "rank": 8, "img_src": "/images/content/rank/rank8.jpg", "inner_img_src": "/images/content/rank/rank8_inner.jpg" },
+                { "id": "top09", "rank": 9, "img_src": "/images/content/rank/rank9.jpg", "inner_img_src": "/images/content/rank/rank9_inner.jpg" },
+                { "id": "top10", "rank": 10, "img_src": "/images/content/rank/rank10.jpg", "inner_img_src": "/images/content/rank/rank10_inner.jpg" }
+            ]
+        },
+        {
+            "type": "category",
+            "id": "award-crime",
+            "header_text": "어워드 수상 범죄 시리즈",
+            "track_size": 6,
+            "cards": [
+                { "id": "ac01", "img_src": "/images/content/category/slider_item13.jpg", "inner_img_src": "/images/content/category/slider_item13.jpg" },
+                { "id": "ac02", "img_src": "/images/content/category/slider_item14.jpg", "inner_img_src": "/images/content/category/slider_item14.jpg" },
+                { "id": "ac03", "img_src": "/images/content/category/slider_item15.webp", "inner_img_src": "/images/content/category/slider_item15.webp" },
+                { "id": "ac04", "img_src": "/images/content/category/slider_item16.webp", "inner_img_src": "/images/content/category/slider_item16.webp" },
+                { "id": "ac05", "img_src": "/images/content/category/slider_item17.jpg", "inner_img_src": "/images/content/category/slider_item17.jpg" },
+                { "id": "ac06", "img_src": "/images/content/category/slider_item18.webp", "inner_img_src": "/images/content/category/slider_item18.webp" },
+                { "id": "ac07", "img_src": "/images/content/category/slider_item19.webp", "inner_img_src": "/images/content/category/slider_item19.webp" },
+                { "id": "ac08", "img_src": "/images/content/category/slider_item20.jpg", "inner_img_src": "/images/content/category/slider_item20.jpg" },
+                { "id": "ac09", "img_src": "/images/content/category/slider_item21.webp", "inner_img_src": "/images/content/category/slider_item21.webp" },
+                { "id": "ac10", "img_src": "/images/content/category/slider_item22.webp", "inner_img_src": "/images/content/category/slider_item22.webp" },
+                { "id": "ac11", "img_src": "/images/content/category/slider_item23.webp", "inner_img_src": "/images/content/category/slider_item23.webp" },
+                { "id": "ac12", "img_src": "/images/content/category/slider_item24.webp", "inner_img_src": "/images/content/category/slider_item24.webp" }
+            ]
+        },
+        {
+            "type": "category",
+            "id": "award-korea",
+            "header_text": "어워드 수상 한국 드라마",
+            "track_size": 5,
+            "cards": [
+                { "id": "ak01", "img_src": "/images/content/category/slider_item10.webp", "inner_img_src": "/images/content/category/slider_item10.webp" },
+                { "id": "ak02", "img_src": "/images/content/category/slider_item11.webp", "inner_img_src": "/images/content/category/slider_item11.webp" },
+                { "id": "ak03", "img_src": "/images/content/category/slider_item12.webp", "inner_img_src": "/images/content/category/slider_item12.webp" },
+                { "id": "ak04", "img_src": "/images/content/category/slider_item13.jpg", "inner_img_src": "/images/content/category/slider_item13.jpg" },
+                { "id": "ak05", "img_src": "/images/content/category/slider_item14.jpg", "inner_img_src": "/images/content/category/slider_item14.jpg" },
+                { "id": "ak06", "img_src": "/images/content/category/slider_item15.webp", "inner_img_src": "/images/content/category/slider_item15.webp" },
+                { "id": "ak07", "img_src": "/images/content/category/slider_item16.webp", "inner_img_src": "/images/content/category/slider_item16.webp" },
+                { "id": "ak08", "img_src": "/images/content/category/slider_item17.jpg", "inner_img_src": "/images/content/category/slider_item17.jpg" },
+                { "id": "ak09", "img_src": "/images/content/category/slider_item18.webp", "inner_img_src": "/images/content/category/slider_item18.webp" },
+                { "id": "ak10", "img_src": "/images/content/category/slider_item19.webp", "inner_img_src": "/images/content/category/slider_item19.webp" },
+                { "id": "ak11", "img_src": "/images/content/category/slider_item20.jpg", "inner_img_src": "/images/content/category/slider_item20.jpg" },
+                { "id": "ak12", "img_src": "/images/content/category/slider_item21.webp", "inner_img_src": "/images/content/category/slider_item21.webp" },
+                { "id": "ak13", "img_src": "/images/content/category/slider_item22.webp", "inner_img_src": "/images/content/category/slider_item22.webp" },
+                { "id": "ak14", "img_src": "/images/content/category/slider_item23.webp", "inner_img_src": "/images/content/category/slider_item23.webp" },
+                { "id": "ak15", "img_src": "/images/content/category/slider_item24.webp", "inner_img_src": "/images/content/category/slider_item24.webp" }
+            ]
+        }
+        ]
+    },
+
+    "footer": {
+        "social_links": [
+            { "img_src": "/images/footer/facebook_icon.png", "class_name": "facebook-button" },
+            { "img_src": "/images/footer/instagram_icon.png", "class_name": "instagram-button" },
+            { "img_src": "/images/footer/twitter_icon.png", "class_name": "twitter-button" },
+            { "img_src": "/images/footer/youtube_icon.png", "class_name": "youtube-button" }
+        ],
+        "member_links": [
+        [
+            { "text": "화면 해설", "link": "#" },
+            { "text": "고객 센터", "link": "#" },
+            { "text": "기프트카드", "link": "#" },
+            { "text": "미디어 센터", "link": "#" }
+        ],
+        [
+            { "text": "투자 정보(IR)", "link": "#" },
+            { "text": "입사 정보", "link": "#" },
+            { "text": "이용 약관", "link": "#" },
+            { "text": "개인정보", "link": "#" }
+        ],
+        [
+            { "text": "법적 고지", "link": "#" },
+            { "text": "쿠키 설정", "link": "#" },
+            { "text": "회사 정보", "link": "#" },
+            { "text": "문의하기", "link": "#" }
+        ]
+        ],
+        "copyright": [
+            { "text": "넷플릭스서비시스코리아 유한회사 통신판매업신고번호: 제2018-서울종로-0426호 전화번호: 00-308-321-0161 (수신자 부담)" },
+            { "text": "대표: 레지널드 숀 톰프슨" },
+            { "text": "이메일 주소: korea@netflix.com" },
+            { "text": "주소: 대한민국 서울특별시 종로구 우정국로 26, 센트로폴리스 A동 20층 우편번호 03161" },
+            { "text": "사업자등록번호: 165-87-00119" },
+            { "text": "클라우드 호스팅: Amazon Web Services Inc." },
+            { "text": "공정거래위원회 웹사이트" }
+        ]
+    }
+}

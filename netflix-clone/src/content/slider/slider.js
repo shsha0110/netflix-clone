@@ -2,13 +2,14 @@ import { create_component, create_component_with_img } from "../../utils.js";
 import { Card } from "../card/card.js"
 
 class Slider {
-    constructor(parent, content, slider_index, card_width, card_height, card_type) {
+    constructor(parent, icon_data, section_data, slider_index, card_width, card_height, card_type) {
         this.parent = parent;
-        this.content = content;
+        this.icon_data = icon_data;
+        this.section_data = section_data;
         this.slider_index = slider_index;
         this.track_index = 1;
-        this.track_size = content.track_size;
-        this.num_card = content.cards.length;
+        this.track_size = section_data.track_size;
+        this.num_card = section_data.cards.length;
         this.num_track = this.num_card / this.track_size;
 
         this.card_width = card_width;
@@ -17,7 +18,6 @@ class Slider {
         this.gap = (this.track_width / this.track_size) - this.card_width;
         
         this.card_type = card_type;
-        this.img_dir = `./content/${this.card_type}/images/`;
 
         this.slider_header = create_component("div", "slider-header", this.parent);
         this.slider_body = create_component("div", "slider-body", this.parent);
@@ -28,7 +28,7 @@ class Slider {
 
     create_slider_header(parent) {
         this.header_text = create_component("div", "slider-header-text", parent);
-        this.header_text.innerHTML = this.content.header_text;
+        this.header_text.innerHTML = this.section_data.header_text;
 
         this.page_indicator = create_component("div", "page-indicator", parent);
         for (let i=0; i < this.num_track; i++) {
@@ -41,21 +41,21 @@ class Slider {
         
         this.backward_button_container = create_component("div", "slider-backward-button-container", parent);
         this.forward_button_container = create_component("div", "slider-forward-button-container", parent);
-        this.backward_button = create_component_with_img("button", "slider-backward-button", this.backward_button_container, `${this.img_dir}backward_icon.png`);
-        this.forward_button = create_component_with_img("button", "slider-forward-button", this.forward_button_container, `${this.img_dir}forward_icon.png`);
+        this.backward_button = create_component_with_img("button", "slider-backward-button", this.backward_button_container, this.icon_data.backward_button);
+        this.forward_button = create_component_with_img("button", "slider-forward-button", this.forward_button_container, this.icon_data.forward_button);
         
         this.track = create_component("div", "slider-track", parent);
         this.track.style.gap = `${this.gap}px`;
         
         let current_card_group;
-        for (let i=0; i < this.num_card; i++) {
-            if (i % this.track_size == 0) {
+        for (let card_index=0; card_index < this.num_card; card_index++) {
+            if (card_index % this.track_size == 0) {
                 current_card_group = create_component("div", "slider-card-group", this.track);
                 current_card_group.style.height = `${this.card_height}px`
                 current_card_group.style.gap = `${this.gap}px`;
             }
-            const card_content = this.content.cards[i];
-            let card = new Card(current_card_group, this.card_width, this.card_height, card_content, this.card_type);
+            const card_data = this.section_data.cards[card_index];
+            let card = new Card(current_card_group, card_index, this.card_width, this.card_height, this.icon_data, card_data, this.card_type);
         }
 
         this.reset_animation();        
