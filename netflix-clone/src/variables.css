@@ -2,6 +2,7 @@
 :root {
     /* color */
     --color-background: #141414;
+    --color-background-grey: #808080;
     --color-font: #fff;
     --color-font-hover: #e5e5e5;
 
@@ -109,7 +110,29 @@
     --padding-top-content: 48px;
     --margin-bottom-content: -68px;
     --padding-slider-inner-item-canvas: 16px;
-    --gap-button-container: 8px;
+    --gap-button-container: 15px;
+
+
+
+
+
+
+
+
+
+
+    --width-content-opinion-modal-container: 140px;
+    --height-content-opinion-modal-container: 50px;
+    --padding-content-opinion-modal-container: 10px;
+    --gap-content-opinion-modal-container: 15px;
+    
+
+
+
+
+
+
+
 
     --height-slider-header: 24px;
     --height-slider-body: 120px;
@@ -147,6 +170,7 @@
     /* Borders & Shadows */
     --border-tooltip-background: 1px solid var(--color-header-tooltip-grey);
     --box-shadow: 0 0 20px rgba(50, 50, 50, 0.5);
+    --box-shadow-inner-modal: 0 0 40px rgba(100, 100, 100, 0.5);
     /* Transitions & Animations */
 
     /* Z-index */

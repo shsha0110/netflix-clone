@@ -1,7 +1,7 @@
 import { create_component, create_component_with_img } from "../../utils.js";
 import { Card } from "../card/card.js"
 
-class Slider {
+export class Slider {
     constructor(parent, icon_data, section_data, slider_index, card_width, card_height, card_type) {
         this.parent = parent;
         this.icon_data = icon_data;
@@ -144,5 +144,3 @@ class Slider {
         }   
     }
 }
-
-export { Slider }
