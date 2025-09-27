@@ -55,7 +55,7 @@ export class Card {
 
         const left_button_container = create_component("div", "left-button-container", button_container);
         this.create_play_modal(left_button_container);
-        this.create_wishlist_modal(left_button_container);
+        this.create_wish_modal(left_button_container);
         this.create_opinion_modal(left_button_container);
         
         const right_button_container = create_component("div", "right-button-container", button_container);
@@ -69,9 +69,97 @@ export class Card {
         create_component_with_img("button", "content-play-button", parent, this.icon_data.play_button);
     }
 
-    create_wishlist_modal(parent) {
-        const wishlist_button = create_component_with_img("button", "content-wishlist-button", parent, this.icon_data.add_button);
+    create_wish_modal(parent) {
+        this.wish_button = create_component_with_img("button", "content-wish-button", parent, this.icon_data.wish_button);
+        this.wish_tooltip = create_component("div", "content-wish-tooltip", this.wish_button);
+        this.wish_tooltip_text = create_component("span", "content-wish-text", this.wish_tooltip);
+        this.wish_tooltip_text.textContent = "내가 찜한 콘텐츠에 추가";
+        this.wish_tooltip_arrow = create_component("div", "content-tooltip-arrow", this.wish_tooltip);
+        
+        this.wish_button.addEventListener("click", () => {
+            this.update_wish_button(this.content_id);
+            this.set_wish()
+        })
+        
+        this.update_wish_button(null);
     }
+
+    update_wish_button(wish) {
+        this.reset_wish_button();
+        const wished = this.get_wish();
+        if (wish) {
+            if (!wished) {
+                this.wish_button.querySelector("img").src = this.icon_data.wish_button_active;
+                this.wish_tooltip_text.textContent = "내가 찜한 콘텐츠에서 삭제";   
+            } else {
+                this.reset_wish_button();
+            }
+        } else {
+            if (wished) {
+                this.wish_button.querySelector("img").src = this.icon_data.wish_button_active;
+                this.wish_tooltip_text.textContent = "내가 찜한 콘텐츠에서 삭제";   
+            } 
+        }
+    }
+
+    reset_wish_button() {
+        this.wish_button.querySelector("img").src = this.icon_data.wish_button;
+        this.wish_tooltip_text.textContent = "내가 찜한 콘텐츠에 추가";
+    }
+
+    set_wish() {
+        const response = localStorage.getItem("wishlist");
+        let wishlist = response ? JSON.parse(response) : [];
+        
+        var updated = false;
+        for (var i = 0; i < wishlist.length; i++) {
+            var wish = wishlist[i];
+            if (wish.id === this.content_id) {
+                wishlist.splice(i, 1);
+                updated = true;
+                break;
+            }
+        }
+        if (!updated) {
+            wishlist.push({ "id": this.content_id });
+            updated = true;
+        }
+
+        localStorage.setItem("wishlist", JSON.stringify(wishlist));
+    }
+
+    get_wish() {
+        const response = localStorage.getItem("wishlist");
+        const wishlist = response ? JSON.parse(response) : [];
+        for (var i = 0; i < wishlist.length; i++) {
+            const wish = wishlist[i];
+            if (wish.id === this.content_id) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     create_opinion_modal(parent) {
         this.opinion_button = create_component_with_img("button", "content-opinion-button", parent, this.icon_data.like_button);

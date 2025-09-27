@@ -84,7 +84,8 @@
     "content": {
         "icons": {
             "play_button": "/images/content/play_icon.png",
-            "add_button": "/images/content/add_icon.png",
+            "wish_button": "/images/content/wish_icon.png",
+            "wish_button_active": "/images/content/wish_icon_active.png",
             "like_button": "/images/content/like_icon.png",
             "like_button_active": "/images/content/like_icon_active.png",
             "dislike_button": "/images/content/dislike_icon.png",
@@ -113,6 +114,7 @@
             "id": "netflix-series",
             "header_text": "넷플릭스 시리즈",
             "track_size": 6,
+            "stride": 6,
             "cards": [
                 { "id": "ns01", "img_src": "/images/content/category/slider_item1.jpg", "inner_img_src": "/images/content/category/slider_item1.jpg" },
                 { "id": "ns02", "img_src": "/images/content/category/slider_item2.jpg", "inner_img_src": "/images/content/category/slider_item2.jpg" },
@@ -145,6 +147,7 @@
             "id": "weekly-popular",
             "header_text": "매주 공개! 이건 꼭 봐야 해",
             "track_size": 5,
+            "stride": 5,
             "cards": [
                 { "id": "wp01", "img_src": "/images/content/category/slider_item5.jpg", "inner_img_src": "/images/content/category/slider_item5.jpg" },
                 { "id": "wp02", "img_src": "/images/content/category/slider_item6.jpg", "inner_img_src": "/images/content/category/slider_item6.jpg" },
@@ -173,6 +176,7 @@
             "id": "top-10-korea",
             "header_text": "오늘 대한민국의 TOP 10 시리즈",
             "track_size": 5,
+            "stride": 5,
             "cards": [
                 { "id": "top01", "rank": 1, "img_src": "/images/content/rank/rank1.jpg", "inner_img_src": "/images/content/rank/rank1_inner.jpg" },
                 { "id": "top02", "rank": 2, "img_src": "/images/content/rank/rank2.jpg", "inner_img_src": "/images/content/rank/rank2_inner.jpg" },
@@ -191,6 +195,7 @@
             "id": "award-crime",
             "header_text": "어워드 수상 범죄 시리즈",
             "track_size": 6,
+            "stride": 6,
             "cards": [
                 { "id": "ac01", "img_src": "/images/content/category/slider_item13.jpg", "inner_img_src": "/images/content/category/slider_item13.jpg" },
                 { "id": "ac02", "img_src": "/images/content/category/slider_item14.jpg", "inner_img_src": "/images/content/category/slider_item14.jpg" },
@@ -211,6 +216,7 @@
             "id": "award-korea",
             "header_text": "어워드 수상 한국 드라마",
             "track_size": 5,
+            "stride": 5,
             "cards": [
                 { "id": "ak01", "img_src": "/images/content/category/slider_item10.webp", "inner_img_src": "/images/content/category/slider_item10.webp" },
                 { "id": "ak02", "img_src": "/images/content/category/slider_item11.webp", "inner_img_src": "/images/content/category/slider_item11.webp" },
