@@ -1,0 +1,290 @@
+.category-slider-card {
+    position: relative;
+    
+    width: var(--width-category-slider-card);
+    height: var(--height-category-slider-card);
+
+    cursor: pointer;
+}
+
+.category-slider-card img{
+    width: var(--width-category-slider-card);
+    height: var(--height-category-slider-card);
+
+    border-radius: 5%;
+}
+
+.category-slider-card:hover .slider-inner-card {
+    z-index: var(--z-index-content-card-hover);
+    opacity: 1;
+    visibility: visible;
+}
+
+.rank-slider-card {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    
+    width: var(--width-rank-slider-card);
+    height: var(--height-rank-slider-card);
+
+    cursor: pointer;
+}
+
+.rank-slider-icon {
+    width: auto;
+    height: 100%;
+}
+
+.rank-slider-card-img {
+    width: var(--width-rank-slider-card-img);
+    height: var(--height-rank-slider-card-img);
+
+    border-radius: 5%;
+}
+
+.rank-slider-card:hover .slider-inner-card {
+    z-index: var(--z-index-content-card-hover);
+    opacity: 1;
+    visibility: visible;
+}
+
+.slider-inner-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+
+    width: var(--width-slider-inner-item);
+    height: var(--height-slider-inner-item);
+    margin: 0;
+    padding: 0;
+    border-radius: 5%;
+    box-shadow: 0 0 20px rgba(50, 50, 50, 0.5);
+    box-sizing: border-box;
+    
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+.slider-inner-card img{
+    width: var(--width-slider-inner-item);
+    height: auto;
+    border-radius: 0;
+}
+
+.slider-inner-card-canvas {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    width: var(--width-slider-inner-item);
+    height: auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    background-color: var(--color-background);
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    width: var(--width-slider-inner-item);
+    height: auto;
+    margin: 0;
+    padding: 0;
+    padding-top: var(--padding-slider-inner-item-canvas);
+    padding-left: var(--padding-slider-inner-item-canvas);
+    padding-right: var(--padding-slider-inner-item-canvas);
+    box-sizing: border-box; 
+}
+
+.left-button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: auto;
+    height: var(--height-content-button);
+    gap: var(--gap-button-container);
+    margin: 0;
+    padding: 0;
+}
+
+.right-button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: auto;
+    height: var(--height-content-button);
+    margin: 0;
+    padding: 0;
+}
+
+.content-play-button, .content-wish-button, 
+.content-opinion-button, .content-dropdown-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: var(--width-content-button);
+    height: var(--width-content-button);
+    padding: 0;
+
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+}
+
+.content-opinion-button, .content-wish-button {
+    position: relative;
+}
+
+.content-play-button img, .content-wish-button img, 
+.content-opinion-button img, .content-dropdown-button img {
+    width: 100%;
+    height: 100%;
+}
+
+.slider-inner-card-description {
+    padding-left: var(--padding-slider-inner-item-canvas);
+    color: var(--color-font);
+}
+
+.content-opinion-modal-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+
+    width: var(--width-content-opinion-modal-container);
+    height: var(--height-content-opinion-modal-container);
+    margin: 0;
+    padding: 0;
+    padding-left: var(--padding-content-opinion-modal-container);
+    padding-right: var(--padding-content-opinion-modal-container);
+    gap: var(--gap-content-opinion-modal-container);
+    box-sizing: border-box;
+
+    background-color: #252525;
+    border-radius: 10em;
+    box-shadow: var(--box-shadow-inner-modal);
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+.content-opinion-button:hover .content-opinion-modal-container {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.2s ease-in;
+}
+
+.content-dislike-button, .content-like-button, .content-best-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: var(--width-content-button);
+    height: var(--width-content-button);
+    padding: 0;
+
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+}
+
+.content-dislike-button img, .content-like-button img, .content-best-button img {
+    width: 100%;
+    height: 100%;
+}
+
+.content-dislike-tooltip, .content-like-tooltip, .content-best-tooltip {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 80%;
+    height: 60%;
+    top: -80%;
+    
+    background-color: #e5e5e5;
+    box-sizing: border-box;
+    border-radius: .5em;
+    box-shadow: var(--box-shadow-inner-modal);
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+.content-wish-tooltip {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 500%;
+    height: 100%;
+    top: -150%;
+    left: -190%;
+    
+    background-color: #e5e5e5;
+    box-sizing: border-box;
+    border-radius: .5em;
+    box-shadow: var(--box-shadow-inner-modal);
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+.content-tooltip-text {
+    position: absolute;
+    color: black;
+    font-size: medium;
+}
+
+.content-tooltip-arrow {
+    position: absolute;
+    top: 100%;
+    left: 45%;
+	
+    width: 10px;
+    height: 10px;
+    background-color: #e5e5e5;
+    
+    clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+}
+
+.content-dislike-button:hover .content-dislike-tooltip, 
+.content-like-button:hover .content-like-tooltip, 
+.content-best-button:hover .content-best-tooltip,
+.content-wish-button:hover .content-wish-tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+.content-wish-button:hover .content-wish-tooltip {
+    opacity: 1;
+    visibility: visible;
+}
