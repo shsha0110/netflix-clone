@@ -14,7 +14,18 @@
         "secondary_navigation": {
             "search": {
                 "img_src": "/images/header/search_icon.png",
-                "alt": "search-button"
+                "alt": "search-button",
+                "search_bar": {
+                    "search": {
+                        "img_src": "/images/header/search_icon.png"
+                    },
+                    "cancel": {
+                        "img_src": "/images/header/cancel_icon.png" 
+                    },
+                    "user_input": {
+                        "text": "제목, 사람, 장르"
+                    }
+                }
             },
             "notification": {
                 "img_src": "/images/header/notification_icon.png",

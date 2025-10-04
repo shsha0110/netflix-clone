@@ -55,11 +55,46 @@ function create_secondary_navigation_item(parent, img_src, alt) {
             dropdown.classList.remove("is-rotated");
         })
     }
+
+    return container;
 }
 
+// ================================================================================= //
+
 function create_search(parent, data) {
-    create_secondary_navigation_item(parent, data.img_src, data.alt);
+    const search_container = create_secondary_navigation_item(parent, data.img_src, data.alt);
+    const search_button = document.querySelector(".search-button");
+    const search_modal = create_search_modal(search_container, data.search_bar);
 }
+
+function create_search_modal(parent, data) {
+    const search_modal = create_component("div", "search-modal", parent);
+    const search_bar = create_component("form", "search-bar", search_modal);
+    const search_icon = create_component_with_img("div", "search-icon", search_bar, data.search.img_src);
+    const user_input = create_user_input(search_bar, data.user_input);
+    const cancel_button = create_component_with_img("button", "cancel-button", search_bar, data.cancel.img_src);
+    add_search_modal_animation(parent, cancel_button, search_modal);
+    
+    return search_modal;
+}
+
+function create_user_input(parent, data) {
+    const user_input = create_component("input", "user-input", parent);
+    user_input.type = "text";
+    user_input.placeholder = data.text;
+}
+
+function add_search_modal_animation(search_button, cancel_button, search_modal) {
+    search_button.addEventListener("click", () => {
+        search_modal.classList.add("active");
+    });
+
+    cancel_button.addEventListener("click", () => {
+        search_modal.classList.remove("active");
+    })
+}
+
+// ================================================================================= //
 
 function create_notification(parent, data) {
     create_secondary_navigation_item(parent, data.img_src, data.alt);
