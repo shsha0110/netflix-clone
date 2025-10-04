@@ -465,3 +465,36 @@
     color: var(--color-font);
     font-size: var(--font-size-navigation);
 }
+
+.search-results {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: var(--padding-header);
+    box-sizing: border-box;
+    gap: var(--gap-slider-track);
+
+    color: var(--color-font);
+}
+
+.search-results-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    
+    width: 100%;
+    height: var(--height-slider-body);
+    margin: 0;
+    padding: 0;
+    gap: var(--gap-slider-track);
+
+    transform: 'transform 0.5s ease';
+}
+
+
